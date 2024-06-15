@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .2s;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(OIP.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.services {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.services p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.services-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-image {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-image {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.contact-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+.contact-image:hover {
+    opacity: 0.8; 
+}
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about p {
+        max-width: 100%;
+    }
+
+    .services-images {
+        flex-direction: column;
+    }
+
+    .service-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .gallery-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        width: 100%;
+        max-width: 300px;
+    }
+}
